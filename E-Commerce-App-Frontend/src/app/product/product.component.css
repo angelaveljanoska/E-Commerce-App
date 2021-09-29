@@ -1,0 +1,36 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 400px;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+.card-title {
+  margin-bottom: 0.3em;
+}
+
+#card-description {
+  margin-bottom: auto;
+}
+
+#card-price {
+  margin-bottom: 0.5em;
+}
+
+.admin-buttons {
+  display:flex;
+}
+
+.card {
+  min-height: 600px;
+  margin-bottom: 2em;
+  transition: all 0.1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}

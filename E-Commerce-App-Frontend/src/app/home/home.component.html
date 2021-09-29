@@ -1,0 +1,11 @@
+<div class="container">
+  <a *ngIf="showAdminButtons" href="/add" class="btn btn-primary">Add new product</a>
+  <div class="jumbotron mt-2">
+    <div class="row">
+      <app-product *ngFor="let product of products" [id]="product.id" [name]="product.name"
+        [description]="product.description" [quantity]="product.quantity" [price]="product.price"
+        [photo]="product.photo" class="col-md-4">
+      </app-product>
+    </div>
+  </div>
+</div>

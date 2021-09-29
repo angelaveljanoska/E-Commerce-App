@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="jumbotron mt-2">
+    <div class="row">
+      <app-order *ngFor="let order of orders" [id]="order.id" [products]="order.products" [userEmail]="order.user.email"
+        [date]="order.date" [status]="order.status" class="col-md-6"></app-order>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.product-container {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid rgba(209, 209, 209, 0.445);
+  border-radius: 1%;
+  background-color: rgba(230, 230, 230, 0.705);
+}

@@ -1,0 +1,28 @@
+<div [hidden]="isSubmitted">
+  <form (ngSubmit)="onSubmit()" #form="ngForm">
+    <div class="form-group">
+      <label for="name">Address name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="address.addressName" name="name">
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" required [(ngModel)]="address.city" name="city">
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" class="form-control" id="state" required [(ngModel)]="address.state" name="state">
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input type="text" class="form-control" id="country" required [(ngModel)]="address.country" name="country">
+    </div>
+    <div class="form-group">
+      <label for="zipcode">Zipcode</label>
+      <input type="number" class="form-control" id="zipcode" required [(ngModel)]="address.zipcode" name="zipcode">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="phone" class="form-control" id="phone" required [(ngModel)]="address.phone" name="phone">
+    </div>
+    <button type="submit" class="btn btn-success">Update address</button>
+  </form>

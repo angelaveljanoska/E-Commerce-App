@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+    <p class="card-text" id="card-description">Ordered by: {{userEmail}} <br />
+      Status: {{status}} <br />
+      Date: {{date}} <br />
+      <hr />
+    <div class="product-container" *ngFor="let product of products">
+      Product name: {{product.product.name}}
+      <br />
+      Quantity: {{product.quantity}} <br />
+      Total: ${{product.quantity*product.product.price}}.00
+    </div>
+
+    <div class="admin-buttons">
+      <span class="btn btn-primary m-1" (click)="updateOrder(true)">Approve</span>
+      <span class="btn btn-primary m-1" (click)="updateOrder(false)">Decline</span>
+    </div>
+  </div>
+</div>
